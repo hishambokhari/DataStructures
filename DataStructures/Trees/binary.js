@@ -11,29 +11,29 @@ class BinarySearchTree {
     this.root = null;
   }
   insert(value){
-    const newNode = new Node(value);
-    if (this.root === null){
-      this.root = newNode;
-    } else {
-      let currentNode = this.root;
-      while(true){
-        if(value < currentNode.value) {
-          // left
-          if(!currentNode.left){
-            currentNode.left = newNode;
-            return this;
-          }
-          currentNode = currentNode.left
-        } else {
-          // right
-          if( !currentNode.right){
-            currentNode.right = newNode;
-            return this;
-          }
-          currentNode = currentNode.right;
-        }
-      }
-    }
+
+    // set a new variable for the new node
+    // check if this root is empty and if so return this as the new node
+    // else set the current node as this root
+    // while there is a current node
+    // we must check if the value to insert is less than the current node
+    // if its < current node we move to the left
+    // if its > the current node we move to the right
+    // if value < currentNode we check 
+    // if the new space is empty. if its empty we set that as the new node
+    // else we keep moving to the left to check till we find an empty spot
+    // once we find a spot we set currentNode to that currentNode.left
+    // if its value > currentNode we move to the right
+    // if there is space at the right spot we insert new node
+    // if not we keep moving to the right to find an empty spot
+    
+
+
+
+
+
+
+
   }
   lookup(value){
   }
