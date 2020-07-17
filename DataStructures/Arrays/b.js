@@ -6,6 +6,13 @@
 
 
 function mergeAry(a,b) {
+  //check input
+  if(a.length === 0){
+    return b;
+  }
+  if(b.length === 0){
+    return a;
+  }
 
   const newAry = a.concat(b)
 
