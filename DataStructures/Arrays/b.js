@@ -14,9 +14,9 @@ function mergeAry(a,b) {
     return a;
   }
 
-  const newAry = a.concat(b)
+  const newAry = a.concat(b) // joining arrays
 
-  return newAry.sort(function(a,b){return a-b})
+  return newAry.sort(function(a,b){return a-b}) // sorting
 }
 
 console.log(mergeAry([0,3,4,31],[4,6,30]))
