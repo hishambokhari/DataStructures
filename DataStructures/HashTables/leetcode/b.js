@@ -19,14 +19,31 @@ class HashTable {
     }
   }
   insert(key, value){
-
+    let idx = hash(key, this.size)
+    this.buckets[idx].set(key, value)
   }
 
-  remove(){
-
+  remove(key){
+    let idx = hash(key, this.size)
+    let deleted = this.buckets[idx].get(key)
+    this.buckets[idx].delete(key)
+    return deleted
   }
 
-  search(){
-
+  search(key){
+    let idx = hash(key, this.size)
+    return this.buckets[idx].get()
   }
 }
+
+const hashTable = new HashTable()
+
+hashTable.insert('serena', 'moon')
+hashTable.insert('hisha', 'mercury')
+hashTable.insert('lita', 'jupitar')
+hashTable.insert('zeus', 'Doggy')
+
+hashTable.remove('lita')
+
+
+console.log(hashTable)
