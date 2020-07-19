@@ -9,4 +9,8 @@ let user = {
 
 user.spell = 'abra kadabra' // added to object
 
-console.log(user)
+user.scream()
+
+
+const a = new Map() // maintains order of insertion
+const b = new Set() // stores only keys not values
