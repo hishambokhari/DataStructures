@@ -16,12 +16,18 @@ class TestArray {
     return item
   }
 
+  get(index){
+    return this.data[index]
+  }
+
 
 }
 
 const arr = new TestArray();
-arr.push('zero')
 arr.push('first')
-arr.pop('first')
+arr.push('second')
+arr.push('third')
+
+
 
 console.log(arr)
