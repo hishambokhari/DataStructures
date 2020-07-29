@@ -4,11 +4,13 @@
 
 // Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
 
-function capitalizeWord(word) {
+// function capitalizeWord(word) {
  
-  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-}
-console.log(capitalizeWord('hey'))
+//   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+// }
+// console.log(capitalizeWord('hey'))
 // Test.assertSimilar(capitalizeWord('word'), 'Word');
 // Test.assertSimilar(capitalizeWord('i'), 'I');
 // Test.assertSimilar(capitalizeWord('glasswear'), 'Glasswear');
+
+
