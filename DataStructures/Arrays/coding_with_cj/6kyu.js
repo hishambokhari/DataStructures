@@ -34,9 +34,20 @@
 // }
 
 function narcissistic(value){
-  return value.toString().split('').reduce(function(sum, digit, i, {length}){
-    return sum + Math.pow(digit, length);
-  },0) == value;
+ let len = value.toString().length
+ let newArr = value.toString().split('')
+ let sum = 0;
+ for(let i = 0; i < len; i++){
+  let parsed = parseInt(newArr[i])
+  
+  sum+= parsed**len
+  
+ }  
+ if ( sum.toString().length === len){
+  return true
+} else {
+  return false
+}
 }
 console.log(narcissistic(371))
 // describe( "Narcissistic Function", function() {
