@@ -12,25 +12,31 @@
 
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
-function narcissistic(value) {
+// function narcissistic(value) {
   
-  // find the length of the value
-    const length =  Math.floor(Math.log10(Math.abs(value))) + 1;
-  // each digit takes the power of the length of the value
-    let sum = 0;
-    let digits = value;
+//   // find the length of the value
+//     const length =  Math.floor(Math.log10(Math.abs(value))) + 1;
+//   // each digit takes the power of the length of the value
+//     let sum = 0;
+//     let digits = value;
 
-    while (digits > 0) {
-      const digit = digits % 10
+//     while (digits > 0) {
+//       const digit = digits % 10
 
-      sum += Math.pow(digit, length);
-      digits = Math.floor(digits/10);
-    }
+//       sum += Math.pow(digit, length);
+//       digits = Math.floor(digits/10);
+//     }
 
-    return sum == value
-  // Add the powered valued for the sum
-  // if the sum has a length equal to the length of the initial length
-  // return true  
+//     return sum == value
+//   // Add the powered valued for the sum
+//   // if the sum has a length equal to the length of the initial length
+//   // return true  
+// }
+
+function narcissistic(value){
+  return value.toString().split('').reduce(function(sum, digit, i, {length}){
+    return sum + Math.pow(digit, length);
+  },0) == value;
 }
 console.log(narcissistic(371))
 // describe( "Narcissistic Function", function() {
