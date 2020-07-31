@@ -37,20 +37,20 @@
 
 // The list(lst) is not sorted.
 
-function maxDiff(list) {
+// function maxDiff(list) {
 
-  if(list == [] || list < 2){
-    return 0
-  }
+//   if(list == [] || list < 2){
+//     return 0
+//   }
   
-    let sortedList = list.sort(function(a,b){return a-b})
-    let firstVal = sortedList[0]
-    let lastVal = sortedList[list.length -1]
-    let maximumDiff = lastVal - firstVal
-    return maximumDiff
+//     let sortedList = list.sort(function(a,b){return a-b})
+//     let firstVal = sortedList[0]
+//     let lastVal = sortedList[list.length -1]
+//     let maximumDiff = lastVal - firstVal
+//     return maximumDiff
 
-};
-console.log(maxDiff([16]))
+// };
+// console.log(maxDiff([16]))
 // Test.describe('Basic tests', function() {
 
 //   Test.assertEquals(maxDiff([0, 1, 2, 3, 4, 5, 6]), 6);
