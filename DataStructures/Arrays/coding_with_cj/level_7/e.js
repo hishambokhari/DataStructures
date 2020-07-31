@@ -53,17 +53,17 @@
 // }
 // console.log(repeatStr(3, "h"))
 
-function solution(a, b){
+// function solution(a, b){
   
-  if ( a.length < b.length ){
-    return a+b+a
-  }
-  if (b.length < a.length){
-    return b+a+b
-  }
+//   if ( a.length < b.length ){
+//     return a+b+a
+//   }
+//   if (b.length < a.length){
+//     return b+a+b
+//   }
 
-}
-console.log(solution('U', 'False'))
+// }
+// console.log(solution('U', 'False'))
 // describe("Sample tests", function() {
 //   it("Should pass sample tests", function() {
 //     Test.assertEquals(solution('45', '1'), '1451');
@@ -72,3 +72,10 @@ console.log(solution('U', 'False'))
 //     Test.assertEquals(solution('U', 'False'), 'UFalseU');
 //   });
 // });
+
+function litres(time) {
+  let perHour = 0.5
+  let result = Math.floor(time * 0.5)
+  return result
+}
+console.log(litres(1787))
