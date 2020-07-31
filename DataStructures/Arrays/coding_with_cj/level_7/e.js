@@ -37,13 +37,38 @@
 // Write function parseFloat (for Javascript parseF) which takes a string and returns a number or Nothing (for Python None, for Javascript null) if conversion is not possible.
 
 
-function parseF(s) {
+// function parseF(s) {
 
-  if (isNaN(parseFloat(s))) {
-     return  null
-   } else {
-    return parseFloat(s)
-   }
-}
-console.log(parseF("0"))
+//   if (isNaN(parseFloat(s))) {
+//      return  null
+//    } else {
+//     return parseFloat(s)
+//    }
+// }
+// console.log(parseF("0"))
 // Test.assertEquals(parseF("1"), 1.0);
+
+// function repeatStr (n, s) {
+//   return s.repeat(n)
+// }
+// console.log(repeatStr(3, "h"))
+
+function solution(a, b){
+  
+  if ( a.length < b.length ){
+    return a+b+a
+  }
+  if (b.length < a.length){
+    return b+a+b
+  }
+
+}
+console.log(solution('U', 'False'))
+// describe("Sample tests", function() {
+//   it("Should pass sample tests", function() {
+//     Test.assertEquals(solution('45', '1'), '1451');
+//     Test.assertEquals(solution('13', '200'), '1320013');
+//     Test.assertEquals(solution('Soon', 'Me'), 'MeSoonMe');
+//     Test.assertEquals(solution('U', 'False'), 'UFalseU');
+//   });
+// });
