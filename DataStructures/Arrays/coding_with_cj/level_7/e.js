@@ -1,5 +1,13 @@
-function sumOfDifferences(arr) {
-  
+var stringToNumber = function(str){
+  return parseFloat(str)
 }
+console.log(stringToNumber("1234"))
 
-console.log([])
+// describe( "stringToNumber", function(){
+//   it( "should work for the examples" , function(){
+//     Test.assertEquals(stringToNumber("1234"),1234)
+//     Test.assertEquals(stringToNumber("605"), 605)
+//     Test.assertEquals(stringToNumber("1405"),1405)
+//     Test.assertEquals(stringToNumber("-7"),  -7)
+//   });
+// });
