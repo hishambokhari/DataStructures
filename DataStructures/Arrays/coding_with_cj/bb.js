@@ -1,8 +1,8 @@
-function howMuchILoveYou(nbPetals) {
-  let petals = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all'];
-  return petals[(nbPetals-1) % 6];
-}
-console.log(howMuchILoveYou(7))
+// function howMuchILoveYou(nbPetals) {
+//   let petals = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all'];
+//   return petals[(nbPetals-1) % 6];
+// }
+// console.log(howMuchILoveYou(7))
 
 
 // Test.describe("howMuchILoveYou",function() {
@@ -18,3 +18,12 @@ console.log(howMuchILoveYou(7))
 // passionately
 // madly
 // not at all
+
+function findNeedle(haystack) {
+  for(let i = 0; i < haystack.length; i++){
+    if (haystack[i] === "needle"){
+      return "found the needle at position " + i
+    }
+  }
+}
+console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]))
