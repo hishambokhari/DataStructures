@@ -11,19 +11,17 @@ function countPositivesSumNegatives(input) {
     return [];
   
   let final = []
-  let sumOfNeg = []
-  let countOfPos = []
+  let sumOfNeg = 0
+  let countOfPos = 0
   for (let i = 0; i < input.length; i++){
     if(input[i] > 0){
-     countOfPos.push(input[i])
+     countOfPos += 1
     }
     if(input[i] < 0){
-      sumOfNeg.push(input[i])
+      sumOfNeg += input[i]
     }
   }
-  let finalCount = countOfPos.length
-  let secElement = sumOfNeg.reduce(function(a,b){return a + b}, 0)
-  final.push(finalCount,secElement)
+  final.push(countOfPos,sumOfNeg)
   return final
 }
 
