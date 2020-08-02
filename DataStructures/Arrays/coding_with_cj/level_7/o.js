@@ -4,15 +4,23 @@
 
 // Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.
 
-function feast(beast, dish) {
+// function feast(beast, dish) {
   
-if ( beast[0] === dish[0] && beast[beast.length-1] ===  dish[dish.length - 1]){
-  return true
-} else {
-  return false
-}
-}
-console.log(feast("great blue heron", "garlic naan"))
+// if ( beast[0] === dish[0] && beast[beast.length-1] ===  dish[dish.length - 1]){
+//   return true
+// } else {
+//   return false
+// }
+// }
+// console.log(feast("great blue heron", "garlic naan"))
 //   Test.assertEquals(feast("great blue heron", "garlic naan"), true)
 // Test.assertEquals(feast("chickadee", "chocolate cake"), true)
 // Test.assertEquals(feast("brown bear", "bear claw"), false)
+
+function stringToArray(string){
+
+return string.split(" ")
+}
+console.log(stringToArray("Robin Singh"))
+// Test.assertDeepEquals(stringToArray("Robin Singh"), ["Robin", "Singh"]);
+// Test.assertDeepEquals(stringToArray("I love arrays they are my favorite"), ["I", "love", "arrays", "they", "are", "my", "favorite"]);
