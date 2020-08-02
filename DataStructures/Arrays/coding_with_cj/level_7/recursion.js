@@ -20,18 +20,25 @@
 
 
 
-// function fibonacciIterative(n){
+function fibonacciIterative(n){
 
-// }
-// console.log(fibonacciIterative(3))
+  let array = [0,1]
 
-
-
-
-function fibonacciRecursive(n){
-  if(n < 2){
-    return n;
+  for(let i = 2; i < n + 1; i++){
+    array.push(array[i-2]+ array[i-1])
   }
-  return fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
+  return array[n]
+
 }
-console.log(fibonacciRecursive(8))
+console.log(fibonacciIterative(8))
+
+
+
+
+// function fibonacciRecursive(n){
+//   if(n < 2){
+//     return n;
+//   }
+//   return fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
+// }
+// console.log(fibonacciRecursive(8))
