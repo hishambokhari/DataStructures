@@ -10,10 +10,28 @@
 // }
 // console.log(findFactorialIterative(5))
 
-function findFactorialRecursive(number){
-  if (number === 2){
-    return 2
+// function findFactorialRecursive(number){
+//   if (number === 2){
+//     return 2
+//   }
+//   return number * findFactorialRecursive(number-1);
+// }
+// console.log(findFactorialRecursive(5))
+
+
+
+// function fibonacciIterative(n){
+
+// }
+// console.log(fibonacciIterative(3))
+
+
+
+
+function fibonacciRecursive(n){
+  if(n < 2){
+    return n;
   }
-  return number * findFactorialRecursive(number-1);
+  return fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
 }
-console.log(findFactorialRecursive(5))
+console.log(fibonacciRecursive(8))
